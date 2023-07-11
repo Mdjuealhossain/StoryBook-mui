@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.storybook-card {
+
+    height: 100%;
+    width: 20rem;
+}
+
+.storybook-card-primary {
+    background: #000;
+    color: white;
+    border: 2px solid #fff;
+}
+
+.storybook-card-secondary {
+    color: #000;
+    background: white;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.storybook-card-success {
+    background: #ccc6d2;
+    color: rgb(8, 2, 2);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.storybook-card-info {
+    background: #c7c2c2;
+    color: #000;
+    ;
+    border: 2px solid #fff;
+}
+
+.storybook-card-error {
+    background: #f1eded;
+    color: #000;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.storybook-cardheader {
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+    padding-top: .5rem;
+    padding-left: 1rem;
+}
+.storybook-cardheader-primary {
+    color: rgb(13, 216, 148);
+}
+.storybook-cardheader-secondary {
+    color: rgb(114, 7, 116);
+}
+.storybook-cardheader-success {
+    color: rgb(10, 59, 43);
+}
+.storybook-cardheader-info {
+    color: rgb(89, 104, 17);
+}
+.storybook-cardheader-error {
+    color: rgb(255, 0, 0);
+}
+.storybook-cardmain {
+    padding-top: 5px;
+    padding-left: 1rem;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: auto;
+
+}
+.storybook-cardfooter {
+    padding-bottom: 5px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    text-align: end;
+    padding-right: 1rem;
+    font-size: 13px;
+}
