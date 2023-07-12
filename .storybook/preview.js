@@ -1,14 +1,29 @@
-/** @type { import('@storybook/react').Preview } */
-const preview = {
-  parameters: {
-    actions: { argTypesRegex: "^on[A-Z].*" },
-    controls: {
-      matchers: {
-        color: /(background|color)$/i,
-        date: /Date$/,
-      },
+
+import {
+  ThemeProvider,
+  createTheme,
+} from '@mui/material/styles';
+
+import {theme} from "../src/ThemingStory&Mui/createTheme"
+
+export const parameters = {
+  actions: { argTypesRegex: '^on[A-Z].*' },
+  controls: {
+    matchers: {
+      color: /(background|color)$/i,
+      date: /Date$/,
     },
   },
 };
 
-export default preview;
+
+
+const withThemeProvider = (Story) => {
+ 
+  return (
+    <ThemeProvider theme={theme}>
+        <Story />
+    </ThemeProvider>
+  );
+};
+export const decorators = [withThemeProvider];

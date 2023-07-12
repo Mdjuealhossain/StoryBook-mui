@@ -9,7 +9,7 @@ export default {
   
   export const Jueal = {
     args: {
-        variant:"primary",
+      variant:"primary",
       label: 'My name is Jueal',
       contactname:"Jueal Hossain",
       fb:"Pete Dilam RidoyDani",
